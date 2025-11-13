@@ -83,12 +83,12 @@
         </div>
     </main>
     <footer>
-        <a href="#" rel="next"><img width="80px" src="img/NerdFlow-logo-200x200.png" alt="Logo"></a>
         <nav>
+            <a href="#" rel="next"><img width="80px" src="img/NerdFlow-logo-200x200.png" alt="Logo"></a>
             <ul>
-                <li><a href="#" rel="next">Fale Conosco</a></li>
-                <li><a href="#" rel="next">Sobre nós</a></li>
-                <li><a href="#" rel="next">Termos de Uso e Privacidade</a></li>
+                <li><a class="footer-links" href="#" rel="next">Fale Conosco</a></li>
+                <li><a class="footer-links" href="#" rel="next">Sobre nós</a></li>
+                <li><a class="footer-links" href="#" rel="next">Termos de Uso e Privacidade</a></li>
             </ul>
         </nav>
         <section id="social-links">
@@ -105,7 +105,7 @@
     <script>
         
         function resize () {
-            if (window.innerWidth >= 1100) {
+            if (window.innerWidth >= 999) {
                 navList.style.display = 'block';
                 search.style.display = 'flex';
             } else {
@@ -131,7 +131,6 @@
         function toggleSearch () {
             if (search.style.display == 'none') {
                 search.style.display = 'flex';
-                document.getElementById('search').querySelector('input').focus();
                 document.getElementById("searchIcon").textContent = "close";
                 navList.style.display = 'none';
                 document.getElementById("menuBurger").textContent = "menu";

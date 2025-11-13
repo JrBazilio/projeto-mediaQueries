@@ -73,7 +73,7 @@ header li {
     display: inline-block;
 }
 
-header nav a {
+.nav-list a {
     position: relative;
     font-size: 1.1rem;
     color: white;
@@ -82,7 +82,7 @@ header nav a {
     margin-left: 10px;
 }
 
-header nav a::after {
+.nav-list a::after {
 content: "";
 position: absolute;
 bottom: 0;
@@ -94,11 +94,11 @@ transition: .3s;
 transform: translate(-50%);
 }
 
-header nav a:hover::after {
+.nav-list a:hover::after {
     width: 100%;
 }
     
-header nav a:hover {
+.nav-list a:hover {
     color: #85F2DE;
 }
 
@@ -307,19 +307,16 @@ footer {
     padding-bottom: 30px;
 }
 
-footer > nav {
-    margin-top: 20px;
-}
-
 footer ul {
     list-style-type: none;
+    margin-top: 20px;
 }
 
 footer > nav li {
     display: inline-block;
 }
 
-footer > nav a {
+.footer-links {
     font-size: .9rem;
     font-weight: bold;
     color: white;
@@ -328,7 +325,7 @@ footer > nav a {
     transition: .2s;
 }
 
-footer a:hover {
+.footer-links:hover {
     color: #306EBF;
 }
 
