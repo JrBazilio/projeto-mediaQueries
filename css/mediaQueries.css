@@ -18,8 +18,14 @@
 
     footer nav > ul > li {
         display: block;
+        max-width: 150px;
+        margin: auto;
         margin-bottom: 10px;
         text-align: center;
+    }
+
+    .footer-links {
+        margin: 0px;
     }
 }
 
