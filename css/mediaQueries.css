@@ -2,10 +2,13 @@
 
 @media screen and (max-width: 432px) {
     footer nav ul {
-        text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
         column-count: 2;
         line-height: 1.5rem;
     }
+}
 
 @media screen and (max-width: 999px) {
     header {
