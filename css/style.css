@@ -90,7 +90,7 @@ left: 50%;
 width: 0;
 height: 2px;
 background: #85F2DE;
-transition: .3s;
+transition: .3s ease-in;
 transform: translate(-50%);
 }
 
@@ -358,4 +358,8 @@ footer p a {
     font-style: italic;
     color: white;
     text-decoration: none;
+}
+
+footer p a:hover {
+    color: #306EBF;
 }
