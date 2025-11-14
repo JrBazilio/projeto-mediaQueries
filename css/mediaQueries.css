@@ -1,12 +1,11 @@
 @charset "UTF8";
 
-/*@media screen and (max-width: 434px) {
+@media screen and (max-width: 432px) {
     footer nav ul {
         text-align: center;
         column-count: 2;
         line-height: 1.5rem;
     }
-}*/
 
 @media screen and (max-width: 999px) {
     header {
