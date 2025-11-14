@@ -1,12 +1,24 @@
 @charset "UTF8";
 
 @media screen and (max-width: 432px) {
-    footer nav ul {
-        display: block;
-        margin: auto;
+    footer nav {
+        display: flex;
+    }
+
+    .logo-container {
+        width: 50%;
         margin-top: 10px;
-        column-count: 2;
-        line-height: 1.5rem;
+    }
+
+    footer nav > ul {
+        width: 50%;
+        margin-top: 0px;
+        border-left: 1px solid gray;
+    }
+
+    footer nav > ul > li {
+        margin-bottom: 10px;
+        text-align: center;
     }
 }
 
