@@ -1,12 +1,12 @@
 @charset "UTF8";
 
-@media screen and (max-width: 434px) {
+/*@media screen and (max-width: 434px) {
     footer nav ul {
         text-align: center;
         column-count: 2;
         line-height: 1.5rem;
     }
-}
+}*/
 
 @media screen and (max-width: 999px) {
     header {
@@ -40,6 +40,10 @@
 
     .nav-list a:hover {
         background-color: #0F1926;
+    }
+
+    .menu-active {
+        display: block;
     }
 
     .burger {
@@ -81,6 +85,10 @@
     .search-button {
         width: 80px;
         margin-right: 10px;
+    }
+
+    .search-active {
+        display: flex;
     }
 }
 

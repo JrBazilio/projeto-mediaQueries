@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
 </head>
-<body onresize="resize()">
+<body>
     <header>
         <nav class="nav-header">
             <span id="menuBurger" class="material-symbols-outlined burger" onclick="toggleMenu()">menu</span>
@@ -103,37 +103,29 @@
         <p>2025 - Desenvolvido por <a href="https://github.com/JrBazilio" target="_blank" rel="external">Junior Bazilio</a></p>
     </footer>
     <script>
-        
-        function resize () {
-            if (window.innerWidth >= 999) {
-                navList.style.display = 'block';
-                search.style.display = 'flex';
-            } else {
-                navList.style.display = 'none';
-                document.getElementById("menuBurger").textContent = "menu";
-            }
-        } 
-
-        function toggleMenu() {
-            if (navList.style.display == 'none') {
-                navList.style.display = 'block';
+        function toggleMenu () {
+            navList.classList.toggle('menu-active');
+            if (navList.classList.contains('menu-active')) {
                 document.getElementById("menuBurger").textContent = "close";
-                search.style.display = 'none';
-                document.getElementById("searchIcon").textContent = "search";
+                if (search.classList.contains('search-active')) {
+                    search.classList.remove('search-active');
+                    document.getElementById("searchIcon").textContent = "search";
+                }
             } else {
-                navList.style.display = 'none';
                 document.getElementById("menuBurger").textContent = "menu";
             }
         }
 
         function toggleSearch () {
-            if (search.style.display == 'none') {
-                search.style.display = 'flex';
-                document.getElementById("searchIcon").textContent = "close";
-                navList.style.display = 'none';
-                document.getElementById("menuBurger").textContent = "menu";
+            search.classList.toggle('search-active');
+            if (search.classList.contains('search-active')) {
+                document.getElementById('searchIcon').textContent = "close";
+                document.getElementById('search').querySelector('input').focus();
+                if (navList.classList.contains('menu-active')) {
+                    navList.classList.remove('menu-active');
+                    document.getElementById('menuBurger').textContent = "menu";
+                }
             } else {
-                search.style.display = 'none';
                 document.getElementById("searchIcon").textContent = "search";
             }
         }
